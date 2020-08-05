@@ -26,7 +26,9 @@
                     <TargetObject condition="begin with">HKLM\System\CurrentControlSet\Services\PortProxy\v4tov4\tcp</TargetObject>
                     <TargetObject condition="is">HKLM\Software\Policies\Microsoft\Windows\DataCollection\TelemetryProxyServer</TargetObject>
                     <TargetObject condition="is">HKLM\Software\Policies\Microsoft\Windows\DataCollection\DisableEnterpriseAuthProxy</TargetObject>
-                    <TargetObject condition="begin with">HKU\Software\Microsoft\Windows\CurrentVersion\Internet Settings</TargetObject>
+                    <TargetObject condition="is">HKU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyEnable</TargetObject>
+                    <TargetObject condition="is">HKU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyServer</TargetObject>
+                    <TargetObject condition="is">HKU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyOverride</TargetObject>
                 </Rule>
                 <Rule name="technique_id=T1090" groupRelation="and">
                 	<TargetObject condition="is">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\WinHttpSettings</TargetObject>
